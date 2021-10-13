@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+
 class Main {
   public static void main(String[] args) {
     Student student1 = new Student();
@@ -18,7 +19,7 @@ class Main {
     System.out.println("student1's name is " + student1.getName() + " and their GPA is " + student1.getGPA()
         + " and their major is " + student1.getMajor());
 
-    System.out.println("student2's name is " + student2.getName() + " and their GPA is " + student2.getGPA()
+    System.out.println("\nstudent2's name is " + student2.getName() + " and their GPA is " + student2.getGPA()
         + " and their major is " + student2.getMajor());
 
     ArrayList<Double> gpas = new ArrayList<Double>();
@@ -29,15 +30,13 @@ class Main {
     double totalGpa = 0;
     double avgGpa;
 
-    for(int i=0; i<=gpas.size()-1; i++){
-     totalGpa = totalGpa + gpas.get(i);
+    for (int i = 0; i <= gpas.size() - 1; i++) {
+      totalGpa = totalGpa + gpas.get(i);
     }
     avgGpa = totalGpa / gpas.size();
-    System.out.println(avgGpa);
-
+    System.out.println("\nThe average GPA is: " + avgGpa);
 
   }
-
 
 }
 // or can do this with the dot operator
